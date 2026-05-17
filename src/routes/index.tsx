@@ -4,6 +4,11 @@ import hero from "@/assets/hero-tafraout.jpg";
 import histoireImg from "@/assets/histoire.jpg";
 import monumentsImg from "@/assets/monuments.jpg";
 import tajineImg from "@/assets/tajine.jpg";
+import rochersImg from "@/assets/rochers-peints.jpg";
+import amandiersImg from "@/assets/amandiers.jpg";
+import panoramaImg from "@/assets/panorama.jpg";
+import ahwachImg from "@/assets/ahwach.jpg";
+import bijouxImg from "@/assets/bijoux.jpg";
 import { ArrowRight, Mountain, Sparkles, UtensilsCrossed } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -139,6 +144,82 @@ function Home() {
               <div className="mt-1 text-sm uppercase tracking-widest opacity-80">{f.v}</div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Image showcase */}
+      <section className="mx-auto max-w-7xl px-5 md:px-8 py-24">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <p className="text-sm uppercase tracking-[0.3em] text-primary font-semibold">Aperçu</p>
+          <h2 className="mt-3 font-display text-3xl md:text-5xl font-semibold">Une vallée aux mille visages</h2>
+          <p className="mt-4 text-muted-foreground">
+            Des rochers peints aux amandiers en fleurs, des bijoux ciselés aux danses ahwach :
+            laissez les images parler avant le voyage.
+          </p>
+        </div>
+        <div className="grid gap-4 md:grid-cols-4 md:grid-rows-2">
+          <div className="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-3xl group aspect-square md:aspect-auto">
+            <img src={panoramaImg} alt="Panorama de Tafraout au coucher du soleil" loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-foreground/80 to-transparent">
+              <p className="text-cream font-display text-2xl">La ville rose au coucher du soleil</p>
+            </div>
+          </div>
+          {[
+            { src: rochersImg, label: "Rochers Peints" },
+            { src: amandiersImg, label: "Amandiers en fleurs" },
+            { src: ahwachImg, label: "Danses ahwach" },
+            { src: bijouxImg, label: "Bijoux d'argent" },
+          ].map((g) => (
+            <div key={g.label} className="relative overflow-hidden rounded-3xl group aspect-square">
+              <img src={g.src} alt={g.label} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-foreground/80 to-transparent">
+                <p className="text-cream font-medium text-sm">{g.label}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Practical info */}
+      <section className="bg-secondary/40 border-y border-border">
+        <div className="mx-auto max-w-7xl px-5 md:px-8 py-20">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <p className="text-sm uppercase tracking-[0.3em] text-primary font-semibold">Préparer son voyage</p>
+            <h2 className="mt-3 font-display text-3xl md:text-5xl font-semibold">Bon à savoir avant de partir</h2>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: "Quand partir ?",
+                text: "Février-mars pour les amandiers en fleurs et le festival. Octobre-novembre pour la randonnée. Évitez juillet-août (chaleur intense).",
+              },
+              {
+                title: "Comment y aller ?",
+                text: "À 2h30 d'Agadir par la route (160 km), traversée spectaculaire de l'Anti-Atlas. Bus quotidiens depuis Agadir, Tiznit et Marrakech.",
+              },
+              {
+                title: "Où dormir ?",
+                text: "Riads traditionnels en centre-ville, auberges familiales dans la vallée d'Ammeln, ou bivouac chez l'habitant à Aguerd-Oudad.",
+              },
+              {
+                title: "À ramener",
+                text: "Amlou en pot, huile d'argan cosmétique, bijoux en argent et tapis berbères directement chez les coopératives féminines.",
+              },
+              {
+                title: "Langues",
+                text: "Tachelhit (langue locale), arabe darija et français très répandu. Quelques mots de tachelhit ouvrent toujours les cœurs.",
+              },
+              {
+                title: "Respect des coutumes",
+                text: "Tenue couvrante en dehors des hôtels, demander avant de photographier les personnes, retirer ses chaussures dans les maisons.",
+              },
+            ].map((p) => (
+              <div key={p.title} className="rounded-2xl bg-card border border-border p-6">
+                <h3 className="font-display text-xl font-semibold text-primary">{p.title}</h3>
+                <p className="mt-2 text-muted-foreground leading-relaxed">{p.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </PageShell>
