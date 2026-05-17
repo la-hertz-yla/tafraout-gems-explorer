@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell, PageHero } from "@/components/PageShell";
-import img from "@/assets/histoire.jpg";
+import img from "@/assets/ammeln-valley.jpg";
 import panoramaImg from "@/assets/panorama.jpg";
-import amandiersImg from "@/assets/amandiers.jpg";
+import amazigh from "@/assets/Amazigh_Alphabet.png";
 import agadirImg from "@/assets/agadir.jpg";
 
 export const Route = createFileRoute("/histoire")({
@@ -148,7 +148,7 @@ function Histoire() {
             <p className="mt-4 text-2xl font-display text-primary">ⵜⴰⴼⵔⴰⵡⵜ</p>
             <p className="mt-1 text-sm text-muted-foreground">« Tafraout » en tifinagh</p>
           </div>
-          <img src={amandiersImg} alt="Amandiers en fleurs dans la vallée" loading="lazy" className="h-full w-full object-cover order-1 md:order-2" />
+          <img src={amazigh} alt="Amandiers en fleurs dans la vallée" loading="lazy" className="h-full w-full object-cover order-1 md:order-2" />
         </div>
       </section>
     </PageShell>

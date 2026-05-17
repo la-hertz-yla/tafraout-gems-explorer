@@ -1,14 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell, PageHero } from "@/components/PageShell";
 import img from "@/assets/monuments.jpg";
+import maison from "@/assets/maison berbere.jpeg";
 import traditionsImg from "@/assets/traditions.jpg";
-import histoireImg from "@/assets/histoire.jpg";
+import histoireImg from "@/assets/jbel lekst.jpg";
 import rochersImg from "@/assets/rochers-peints.jpg";
 import chapeauImg from "@/assets/chapeau-napoleon.jpg";
-import agadirImg from "@/assets/agadir.jpg";
+import agadirImg from "@/assets/les agadirs.jpeg";
 import amandiersImg from "@/assets/amandiers.jpg";
 import ammelnImg from "@/assets/ammeln-valley.jpg";
 import bijouxImg from "@/assets/bijoux.jpg";
+import valleyimln from "@/assets/ammeln-valley.jpg";
 
 export const Route = createFileRoute("/monuments")({
   head: () => ({
@@ -42,12 +44,12 @@ const monuments = [
   {
     title: "La vallée des Ammeln",
     desc: "26 villages roses accrochés au pied du Jbel Lekst (2 359 m), entourés de palmeraies et de terrasses d'amandiers. Un balcon naturel sur l'Anti-Atlas, où chaque village (Oumesnat, Tagdicht, Tirnmatmat…) conserve son agadir, sa mosquée et ses sources. La traversée à pied est l'une des plus belles randonnées du Sud marocain.",
-    img: amandiersImg,
+    img: valleyimln,
   },
   {
     title: "La Maison Berbère d'Oumesnat",
     desc: "Petit musée familial installé dans une authentique maison de la vallée. On y découvre les ustensiles du quotidien, les bijoux d'argent, le métier à tisser et les techniques de construction en pisé. Le guide, descendant des bâtisseurs, raconte la vie d'autrefois avec humour et émotion.",
-    img: img,
+    img: maison,
   },
   {
     title: "Le Jbel Lekst",

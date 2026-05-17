@@ -1,15 +1,20 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell, PageHero } from "@/components/PageShell";
-import vetements from "@/assets/vetements.jpg";
+import vetements from "@/assets/tamelhaft.jpeg";
+import toghrifin from "@/assets/toghrifin.jpeg";
+import tafarnout from "@/assets/tafarnout.jpeg";
 import tajine from "@/assets/tajine.jpg";
 import amlou from "@/assets/amlou.jpg";
+import aghroum from "@/assets/aghroum.jpeg";
 import couscous from "@/assets/couscous.jpg";
-import msemen from "@/assets/msemen.jpg";
 import bijoux from "@/assets/bijoux.jpg";
-import the from "@/assets/the.jpg";
-import argan from "@/assets/argan.jpg";
-import amandiers from "@/assets/amandiers.jpg";
-import marche from "@/assets/marche.jpg";
+import baddaz from "@/assets/baddaz.jpeg";
+import berkoukes from "@/assets/berkoukes.jpeg";
+import bidaouz from "@/assets/bidaouz.jpeg";
+import mechoui from "@/assets/mechoui.jpeg";
+import boulfaf from "@/assets/boulfaf.jpeg";
+import mrouzia from "@/assets/mrouzia.jpeg";
+import bissara from "@/assets/bissara.jpeg";
 import { MapPin } from "lucide-react";
 
 export const Route = createFileRoute("/cuisine")({
@@ -85,7 +90,7 @@ const plats = [
   },
   {
     name: "Bidaouz — Couscous d'orge à l'argan",
-    img: couscous,
+    img: bidaouz,
     desc: "Spécialité ancestrale du Souss : seksu n tumzin, couscous d'orge concassée servi avec du lait fermenté (lben) ou simplement arrosé d'huile d'argan. Plat d'hiver chaleureux qui fait la fierté des familles ammelnies. On le mange dans un grand plat commun, à la main droite.",
     restaurants: [
       { name: "Auberge Chez Amaliya", info: "Bidaouz préparé à la demande, accompagné de lben de la ferme voisine." },
@@ -94,7 +99,7 @@ const plats = [
   },
   {
     name: "Tikourbabine — Berkoukes",
-    img: tajine,
+    img: berkoukes,
     desc: "Gros couscous (boulettes de semoule de la taille d'un petit pois) mijoté dans un bouillon de tomate, légumes, viande séchée (lkhli) et pois chiches. Plat d'hiver typique des montagnes du Sud, copieux et parfumé au cumin, ras el hanout et coriandre.",
     restaurants: [
       { name: "Chez Sabir", info: "Tikourbabine maison servi le mardi et le jeudi soir." },
@@ -103,7 +108,7 @@ const plats = [
   },
   {
     name: "Baddaz — Couscous de maïs",
-    img: couscous,
+    img: baddaz,
     desc: "Couscous à base de semoule de maïs jaune, servi avec un tajine de légumes, d'huile d'argan et parfois de viande de chèvre. Plat des familles paysannes de la vallée, longtemps réservé aux récoltes, aujourd'hui retrouvé sur les tables des fêtes.",
     restaurants: [
       { name: "Maison d'hôtes Tigmi", info: "Baddaz traditionnel servi le dimanche midi sur réservation." },
@@ -111,7 +116,7 @@ const plats = [
   },
   {
     name: "Tagoula & Aghroum",
-    img: msemen,
+    img: aghroum,
     desc: "La tagoula (parfois écrite tagulla) est une bouillie épaisse d'orge ou de maïs, servie le matin dans un plat commun avec un puits central rempli d'huile d'argan et de miel. L'aghroum est le pain berbère, cuit sous la cendre ou dans le tafarnout (four en terre creusé dans le sol), dense et parfumé, compagnon de tous les repas.",
     restaurants: [
       { name: "Café Le Souss", info: "Tagoula matinale servie traditionnellement dans un bol commun." },
@@ -119,17 +124,17 @@ const plats = [
     ],
   },
   {
-    name: "Bouchiar / Tighrifin — Crêpes mille-trous",
-    img: msemen,
+    name: " Toghrifin — Msemen",
+    img: toghrifin,
     desc: "Crêpes berbères ajourées, légères et spongieuses, cuites sur une plaque en argile. Servies au petit-déjeuner avec du beurre fondu (oudi) et du miel d'amandiers, ou avec l'amlou. Chaque famille a sa recette transmise oralement.",
     restaurants: [
-      { name: "Café Atlas", info: "Tighrifin servies tièdes avec miel de jujubier et beurre de chèvre." },
+      { name: "Café Atlas", info: "Toghrifin servies tièdes avec miel de jujubier et beurre de chèvre." },
       { name: "Riad Tafraout", info: "Buffet du matin avec choix de pâtes à tartiner locales : amlou, miel, beurre fermier." },
     ],
   },
   {
     name: "Tafarnout — Pain au four de terre",
-    img: msemen,
+    img: tafarnout,
     desc: "Galette de blé épaisse cuite contre les parois d'un four cylindrique en argile chauffé au bois (tafarnout, sœur du tandoor). Cuite en quelques minutes, elle développe une croûte fumée unique. C'est le pain des grandes occasions et des marchés.",
     restaurants: [
       { name: "Coopérative féminine d'Oumesnat", info: "Démonstration de cuisson tafarnout chaque mercredi matin." },
@@ -137,7 +142,7 @@ const plats = [
   },
   {
     name: "Méchoui d'agneau & Tanjia",
-    img: tajine,
+    img: mechoui,
     desc: "Pour les grandes occasions, l'agneau est rôti entier dans un four creusé dans la terre (méchoui), ou mijoté pendant des heures dans une jarre de terre cuite scellée et enfouie sous les braises (tanjia). Une cuisine de patience qui marque les mariages, les naissances et les fêtes religieuses.",
     restaurants: [
       { name: "Restaurant L'Arganier", info: "Méchoui sur réservation, accompagné de cumin, de pain berbère et de salade marocaine." },
@@ -146,7 +151,7 @@ const plats = [
   },
   {
     name: "Tahricht / Boulfaf — Brochettes de foie",
-    img: tajine,
+    img: boulfaf,
     desc: "Morceaux de foie d'agneau enroulés dans la crépine (la fine membrane qui entoure les viscères), épicés au cumin et au paprika, grillés sur la braise. Plat emblématique de l'Aïd al-Adha, dégusté en famille dès que les premiers morceaux sortent du barbecue.",
     restaurants: [
       { name: "Grillades du Souk", info: "Petites échoppes de la place du marché — boulfaf grillés à la commande chaque après-midi." },
@@ -155,7 +160,7 @@ const plats = [
   },
   {
     name: "Mrouzia — Tajine sucré aux amandes",
-    img: tajine,
+    img: mrouzia,
     desc: "Tajine d'agneau confit avec miel, amandes entières, raisins secs, cannelle et ras el hanout. Préparé pour conserver la viande après l'Aïd, il se déguste au fil des jours, encore meilleur réchauffé. Saveur sucrée-salée intense, très ancrée dans la tradition amazighe du Sud.",
     restaurants: [
       { name: "L'Arganier", info: "Mrouzia maison sur réservation, idéal pour les groupes." },
@@ -164,83 +169,11 @@ const plats = [
   },
   {
     name: "Bissara à l'huile d'argan",
-    img: argan,
+    img: bissara,
     desc: "Soupe épaisse de fèves cassées ou de pois cassés, parfumée à l'ail, au cumin et au paprika, arrosée d'un filet d'huile d'argan en fin de cuisson. Petit-déjeuner d'hiver des paysans de la vallée, qui réchauffe avant le travail dans les amandiers.",
     restaurants: [
       { name: "Café Le Souss", info: "Bissara servie chaque matin dès 7h, avec pain berbère et thé." },
       { name: "Échoppes du souk du mercredi", info: "Plusieurs petits stands proposent la bissara du jour aux maraîchers." },
-    ],
-  },
-  {
-    name: "Rfissa berbère",
-    img: msemen,
-    desc: "Effilochés de msemen ou de crêpes trid recouverts d'un ragoût de poulet aux lentilles, fenugrec, oignons confits et ras el hanout. Plat servi traditionnellement aux jeunes mamans pour reprendre des forces après l'accouchement, et lors des grandes réceptions.",
-    restaurants: [
-      { name: "Chez Sabir", info: "Rfissa préparée à la demande, recette transmise par la grand-mère." },
-      { name: "Hôtel Les Amandiers", info: "Rfissa au menu lors des soirées à thème cuisine berbère." },
-    ],
-  },
-  {
-    name: "Tajine de chèvre à l'arganier",
-    img: tajine,
-    desc: "Viande de chèvre des hauteurs du Jbel Lekst, lentement mijotée avec oignons, tomates, herbes sauvages et fruits d'arganier. Spécialité villageoise par excellence, dont le secret réside dans la qualité de la bête, nourrie d'arganier et de buissons aromatiques.",
-    restaurants: [
-      { name: "Auberge Chez Amaliya", info: "Spécialité de la maison, viande de chèvre des éleveurs d'Aguerd-Oudad." },
-      { name: "Maison d'hôtes Tigmi", info: "Tajine de chèvre cuit au feu de bois, sur réservation 24h avant." },
-    ],
-  },
-  {
-    name: "Ghoriba aux amandes",
-    img: amandiers,
-    desc: "Biscuits sablés à la farine d'amandes, fendillés sur le dessus, parfumés à la fleur d'oranger ou au zeste de citron. Préparés en abondance pendant le Festival des amandiers et offerts aux visiteurs avec le thé. La pâtisserie symbole de Tafraout.",
-    restaurants: [
-      { name: "Pâtisserie Al Hilal", info: "Ghoriba aux amandes locales préparées chaque matin, à emporter en boîte cadeau." },
-      { name: "Coopérative Tifawine", info: "Atelier de fabrication ouvert aux visiteurs pendant le Festival des amandiers." },
-    ],
-  },
-  {
-    name: "Sellou (Sfouf)",
-    img: amandiers,
-    desc: "Mélange torréfié de farine, d'amandes grillées, de graines de sésame, d'anis et de miel, lié au beurre fondu. Très calorique et nourrissant, il accompagne les fêtes religieuses, le ramadan et les célébrations familiales. Se conserve plusieurs semaines.",
-    restaurants: [
-      { name: "Pâtisserie Al Hilal", info: "Sellou maison, pesé sur place selon les souhaits." },
-      { name: "Souk du mercredi", info: "Étals de marchandes proposant leur version familiale de sellou." },
-    ],
-  },
-  {
-    name: "Khli — Viande séchée",
-    img: tajine,
-    desc: "Lanières de viande de bœuf ou d'agneau séchées au soleil, puis confites dans la graisse et les épices. Utilisé toute l'année pour parfumer œufs au plat, tikourbabine ou tajines. Méthode de conservation ancestrale, encore pratiquée dans les villages de la vallée.",
-    restaurants: [
-      { name: "Cafés du marché", info: "Œufs au khli servis au petit-déjeuner les jours de souk." },
-      { name: "Maison d'hôtes Tigmi", info: "Démonstration de préparation du khli pendant les ateliers cuisine." },
-    ],
-  },
-  {
-    name: "Zaaluk & Taktouka",
-    img: marche,
-    desc: "Salades chaudes berbères : le zaaluk (aubergines fondues à l'ail et au cumin) et la taktouka (poivrons grillés et tomates concassées). Servies en entrée avec du pain berbère, elles ouvrent tous les repas de fête dans la vallée.",
-    restaurants: [
-      { name: "Restaurant Marrakech", info: "Assortiment de 7 salades marocaines incluant zaaluk et taktouka." },
-      { name: "L'Arganier", info: "Mezze d'entrées berbères avec produits du potager." },
-    ],
-  },
-  {
-    name: "Harira berbère",
-    img: argan,
-    desc: "Soupe traditionnelle à la tomate, lentilles, pois chiches, viande, coriandre et céleri, liée à la farine. Plat du Ramadan par excellence pour rompre le jeûne, accompagnée de dattes, de chebbakia (gâteau au miel) et d'œufs durs.",
-    restaurants: [
-      { name: "Café Atlas", info: "Harira servie chaque soir du Ramadan, dégustée aux premières lueurs du f'tour." },
-      { name: "Restaurant Tanger", info: "Recette familiale avec dose généreuse de coriandre fraîche." },
-    ],
-  },
-  {
-    name: "Thé à la menthe & dattes",
-    img: the,
-    desc: "Plus qu'une boisson, le thé vert à la menthe est un rituel d'hospitalité. Versé de haut depuis une théière en argent, il est toujours servi trois fois — « doux comme la vie, fort comme l'amour, amer comme la mort ». Il s'accompagne de dattes, d'amandes grillées et de pâtisseries au miel.",
-    restaurants: [
-      { name: "Café Etoile du Sud", info: "Terrasse panoramique, thé préparé devant vous avec menthe fraîche de la vallée." },
-      { name: "Café Atlas", info: "Adresse historique du centre, fréquentée par les anciens chaque après-midi." },
     ],
   },
 ];
