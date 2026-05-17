@@ -4,6 +4,8 @@ import vetements from "@/assets/vetements.jpg";
 import tajine from "@/assets/tajine.jpg";
 import amlou from "@/assets/amlou.jpg";
 import couscous from "@/assets/couscous.jpg";
+import msemen from "@/assets/msemen.jpg";
+import bijoux from "@/assets/bijoux.jpg";
 import { MapPin } from "lucide-react";
 
 export const Route = createFileRoute("/cuisine")({
@@ -26,7 +28,7 @@ const vetementsItems = [
   },
   {
     title: "Bijoux d'argent berbères",
-    text: "Fibules (tizerzai), colliers de pièces, bracelets gravés de symboles protecteurs : l'argent ciselé est un véritable patrimoine transmis de mère en fille.",
+    text: "Fibules (tizerzai), colliers de pièces, bracelets gravés de symboles protecteurs, diadèmes (taounza) : l'argent ciselé est un véritable patrimoine transmis de mère en fille. Chaque pièce porte des motifs protecteurs contre le mauvais œil.",
   },
   {
     title: "Babouches & belghas",
@@ -35,6 +37,14 @@ const vetementsItems = [
   {
     title: "Tapis et tissages d'Ammeln",
     text: "Les femmes de la vallée tissent des tapis aux motifs géométriques rouges, noirs et écrus — chaque symbole raconte une histoire familiale.",
+  },
+  {
+    title: "Henné & parures de mariage",
+    text: "Avant les noces, la mariée reçoit le henné sur les mains et les pieds dans des motifs géométriques amazighes. Une cérémonie féminine accompagnée de chants et de youyous, qui peut durer toute une nuit.",
+  },
+  {
+    title: "Djellaba & selham",
+    text: "Pour les hommes, la djellaba blanche en hiver, beige en été, accompagnée du selham (cape à capuche) lors des grandes occasions. Les jeunes mariés portent souvent une djellaba brodée de fil d'or.",
   },
 ];
 
@@ -71,13 +81,42 @@ const plats = [
   },
   {
     name: "Tagoula & Aghroum",
-    img: amlou,
+    img: msemen,
     desc: "La tagoula est une bouillie d'orge ou de maïs, servie le matin avec un puits d'huile d'argan et de miel. L'aghroum est le pain berbère cuit sous la cendre, dense et parfumé, compagnon de tous les repas.",
     restaurants: [
       { name: "Café Le Souss", info: "Tagoula matinale servie traditionnellement dans un bol commun." },
       { name: "Maisons d'hôtes de la vallée d'Ammeln", info: "Plusieurs riads servent l'aghroum cuit le matin même au feu de bois." },
     ],
   },
+  {
+    name: "Méchoui d'agneau & Tanjia",
+    img: tajine,
+    desc: "Pour les grandes occasions, l'agneau est rôti entier dans un four creusé dans la terre (méchoui), ou mijoté pendant des heures dans une jarre de terre cuite scellée et enfouie sous les braises (tanjia). Une cuisine de patience qui marque les mariages, les naissances et les fêtes religieuses.",
+    restaurants: [
+      { name: "Restaurant L'Arganier", info: "Méchoui sur réservation, accompagné de cumin, de pain berbère et de salade marocaine." },
+      { name: "Auberge Chez Amaliya", info: "Tanjia traditionnelle préparée dans le four à pain communal de la vallée." },
+    ],
+  },
+  {
+    name: "Thé à la menthe & dattes",
+    img: amlou,
+    desc: "Plus qu'une boisson, le thé vert à la menthe est un rituel d'hospitalité. Versé de haut depuis une théière en argent, il est toujours servi trois fois — « doux comme la vie, fort comme l'amour, amer comme la mort ». Il s'accompagne de dattes, d'amandes grillées et de pâtisseries au miel.",
+    restaurants: [
+      { name: "Café Etoile du Sud", info: "Terrasse panoramique, thé préparé devant vous avec menthe fraîche de la vallée." },
+      { name: "Café Atlas", info: "Adresse historique du centre, fréquentée par les anciens chaque après-midi." },
+    ],
+  },
+];
+
+const restos = [
+  { name: "Restaurant Marrakech", spec: "Tajines et couscous", area: "Place centrale" },
+  { name: "L'Arganier", spec: "Cuisine berbère raffinée, méchoui", area: "Route d'Agadir" },
+  { name: "Café Atlas", spec: "Petit-déjeuner berbère, amlou", area: "Centre-ville" },
+  { name: "Restaurant La Kasbah", spec: "Couscous du vendredi", area: "Quartier nord" },
+  { name: "Hôtel Les Amandiers", spec: "Buffet panoramique", area: "Hauteurs de la ville" },
+  { name: "Chez Sabir", spec: "Cuisine maison ammelnie", area: "Aguerd-Oudad" },
+  { name: "Café Le Souss", spec: "Tagoula et aghroum", area: "Souk" },
+  { name: "Restaurant Tanger", spec: "Cuisine populaire, tajines", area: "Rue principale" },
 ];
 
 function Cuisine() {
@@ -112,6 +151,27 @@ function Cuisine() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bijoux focus */}
+      <section className="bg-foreground text-cream">
+        <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 grid gap-10 md:grid-cols-2 items-center">
+          <div>
+            <p className="text-sm uppercase tracking-[0.3em] text-primary-foreground/80 font-semibold">Argent ciselé</p>
+            <h2 className="mt-2 font-display text-3xl md:text-5xl font-semibold">L'art des bijoutiers d'Ida Ou Nadif</h2>
+            <p className="mt-4 text-cream/80 leading-relaxed">
+              Depuis des siècles, les bijoutiers de la région d'Ida Ou Nadif, à quelques
+              kilomètres de Tafraout, façonnent l'argent au marteau et au burin. Fibules
+              triangulaires, pendentifs « main de Fatma », colliers à grosses perles
+              d'ambre et de corail : chaque pièce raconte un statut, une famille, une
+              région. La transmission se fait toujours de maître à apprenti, dans de
+              petits ateliers de quartier.
+            </p>
+          </div>
+          <div className="rounded-3xl overflow-hidden shadow-2xl">
+            <img src={bijoux} alt="Bijoux berbères en argent ciselé" loading="lazy" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -154,6 +214,29 @@ function Cuisine() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Carnet d'adresses */}
+      <section className="mx-auto max-w-7xl px-5 md:px-8 py-20">
+        <div className="text-center mb-10 max-w-2xl mx-auto">
+          <p className="text-sm uppercase tracking-[0.3em] text-primary font-semibold">Carnet d'adresses</p>
+          <h2 className="mt-2 font-display text-3xl md:text-5xl font-semibold">Les bonnes tables de Tafraout</h2>
+          <p className="mt-4 text-muted-foreground">
+            Un récapitulatif rapide des restaurants, cafés et auberges où vivre une vraie
+            expérience culinaire dans la vallée.
+          </p>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {restos.map((r) => (
+            <div key={r.name} className="rounded-2xl border border-border bg-card p-5 hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-accent font-semibold">
+                <MapPin className="h-3 w-3" /> {r.area}
+              </div>
+              <h3 className="mt-2 font-display text-xl font-semibold">{r.name}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{r.spec}</p>
+            </div>
+          ))}
         </div>
       </section>
     </PageShell>
