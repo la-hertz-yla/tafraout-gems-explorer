@@ -7,8 +7,8 @@ import tajineImg from "@/assets/tajine.jpg";
 import rochersImg from "@/assets/rochers-peints.jpg";
 import amandiersImg from "@/assets/amandiers.jpg";
 import panoramaImg from "@/assets/panorama.jpg";
-import ahwachImg from "@/assets/ahwach.jpg";
 import bijouxImg from "@/assets/bijoux.jpg";
+import villageImg from "@/assets/monuments.jpg";
 import { ArrowRight, Mountain, Sparkles, UtensilsCrossed } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -153,7 +153,7 @@ function Home() {
           <p className="text-sm uppercase tracking-[0.3em] text-primary font-semibold">Aperçu</p>
           <h2 className="mt-3 font-display text-3xl md:text-5xl font-semibold">Une vallée aux mille visages</h2>
           <p className="mt-4 text-muted-foreground">
-            Des rochers peints aux amandiers en fleurs, des bijoux ciselés aux danses ahwach :
+            Des rochers peints aux amandiers en fleurs, des bijoux ciselés aux villages roses :
             laissez les images parler avant le voyage.
           </p>
         </div>
@@ -167,7 +167,7 @@ function Home() {
           {[
             { src: rochersImg, label: "Rochers Peints" },
             { src: amandiersImg, label: "Amandiers en fleurs" },
-            { src: ahwachImg, label: "Danses ahwach" },
+            { src: villageImg, label: "Villages de pisé" },
             { src: bijouxImg, label: "Bijoux d'argent" },
           ].map((g) => (
             <div key={g.label} className="relative overflow-hidden rounded-3xl group aspect-square">

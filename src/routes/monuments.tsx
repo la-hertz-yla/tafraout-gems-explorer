@@ -7,7 +7,8 @@ import rochersImg from "@/assets/rochers-peints.jpg";
 import chapeauImg from "@/assets/chapeau-napoleon.jpg";
 import agadirImg from "@/assets/agadir.jpg";
 import amandiersImg from "@/assets/amandiers.jpg";
-import ahwachImg from "@/assets/ahwach.jpg";
+import ammelnImg from "@/assets/ammeln-valley.jpg";
+import bijouxImg from "@/assets/bijoux.jpg";
 
 export const Route = createFileRoute("/monuments")({
   head: () => ({
@@ -119,7 +120,7 @@ function Monuments() {
         <div className="mx-auto max-w-7xl px-5 md:px-8 py-16">
           <div className="grid gap-10 md:grid-cols-[1fr_1.2fr] items-center">
             <div className="rounded-3xl overflow-hidden shadow-xl">
-              <img src={ahwachImg} alt="Danse ahwach autour du feu" loading="lazy" className="w-full h-full object-cover" />
+              <img src={bijouxImg} alt="Bijoux et traditions amazighes" loading="lazy" className="w-full h-full object-cover" />
             </div>
             <div>
               <p className="text-sm uppercase tracking-[0.3em] text-primary font-semibold">Traditions</p>
@@ -154,7 +155,7 @@ function Monuments() {
             { src: chapeauImg, alt: "Le Chapeau de Napoléon au coucher du soleil" },
             { src: agadirImg, alt: "Agadir berbère perché" },
             { src: amandiersImg, alt: "Amandiers en fleurs face au Jbel Lekst" },
-            { src: ahwachImg, alt: "Danse ahwach nocturne" },
+            { src: ammelnImg, alt: "Vallée des Ammeln" },
             { src: traditionsImg, alt: "Tenues amazighes traditionnelles" },
           ].map((g) => (
             <div key={g.alt} className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
