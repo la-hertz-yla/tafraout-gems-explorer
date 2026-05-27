@@ -4,6 +4,10 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  '@tanstack/react-query': 5.100.14
+  '@tanstack/query-core': 5.100.14
+
 importers:
 
   .:
